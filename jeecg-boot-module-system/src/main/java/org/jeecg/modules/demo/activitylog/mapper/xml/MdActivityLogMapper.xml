@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.demo.activitylog.mapper.MdActivityLogMapper">
+    <select id="getActivityLogById" resultType="org.jeecg.modules.demo.activitylog.entity.MdActivityLog">
+        select * from md_activity_log where al_id=#{alId} AND al_open_id =#{alOpenId}
+    </select>
+    <select id="getActivityLogByDetailId" resultType="org.jeecg.modules.demo.activitylog.entity.MdActivityLog">
+        select * from md_activity_log where al_id=#{alId} AND al_detail_id=#{alDetailId}
+        <if test="alOpenId!=null and alOpenId!=''">
+            AND al_open_id =#{alOpenId}
+        </if>
+    </select>
+    <update id="updateSign">
+		UPDATE md_activity_log SET al_sign_in = #{alSignIn} where al_id=#{alId}
+		AND al_open_id =#{alOpenId}
+		AND al_detail_id=#{alDetailId}
+	</update>
+    <delete id="deleteByAlId">
+		DELETE FROM md_activity_log where al_id=#{alId}
+	</delete>
+    <select id="getActivityLogByUser" resultType="java.util.HashMap">
+        select * from md_activity_log where al_open_id=#{alOpenId}
+    </select>
+</mapper>

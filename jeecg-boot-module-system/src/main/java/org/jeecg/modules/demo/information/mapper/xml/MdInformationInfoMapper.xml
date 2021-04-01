@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.demo.information.mapper.MdInformationInfoMapper">
+    <resultMap id="informationInfoData" type="org.jeecg.modules.demo.information.entity.MdInformationInfo">
+        <result column="id" property="id" jdbcType="VARCHAR"/>
+        <result column="in_title" property="inTitle" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="in_type" property="inType" jdbcType="VARCHAR"/>
+        <result column="in_status" property="inStatus" jdbcType="VARCHAR"/>
+        <result column="cover" property="cover" jdbcType="VARCHAR"/>
+        <result column="in_release_time" property="inReleaseTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <select id="getInformationInfoData" parameterType="Object" resultMap="informationInfoData">
+        select
+        id,
+        in_title,
+        create_time,
+        in_type,
+        in_status,
+        cover,
+        in_release_time
+        from md_information_info
+        where 1=1
+        <if test="mdInformationInfo.inTitle !=null and mdInformationInfo.inTitle != ''">
+            and in_title = #{mdInformationInfo.inTitle}
+        </if>
+        <if test="mdInformationInfo.inType !=null and mdInformationInfo.inType != ''">
+            and in_type = #{mdInformationInfo.inType}
+        </if>
+    </select>
+
+</mapper>

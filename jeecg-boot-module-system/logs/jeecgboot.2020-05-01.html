@@ -1,0 +1,1456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Fri May 01 20:55:31 CST 2020</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:31,766</td>
+<td class="Message">Starting JeecgApplication v2.1.4 on DESKTOP-D5G6BG1 with PID 5432 (D:\world\workspace\jeecg-boot-master\jeecg-boot\jeecg-boot-module-system\target\jeecg-boot-module-system-2.1.4.jar started by ms-pc031 in D:\world\workspace\jeecg-boot-master\jeecg-boot\jeecg-boot-module-system\target)</td>
+<td class="MethodOfCaller">logStarting</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:31,772</td>
+<td class="Message">The following profiles are active: dev</td>
+<td class="MethodOfCaller">logStartupProfileInfo</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="LineOfCaller">679</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:34,486</td>
+<td class="Message">Multiple Spring Data modules found, entering strict repository configuration mode!</td>
+<td class="MethodOfCaller">multipleStoresDetected</td>
+<td class="FileOfCaller">RepositoryConfigurationDelegate.java</td>
+<td class="LineOfCaller">244</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:34,493</td>
+<td class="Message">Bootstrapping Spring Data repositories in DEFAULT mode.</td>
+<td class="MethodOfCaller">registerRepositoriesIn</td>
+<td class="FileOfCaller">RepositoryConfigurationDelegate.java</td>
+<td class="LineOfCaller">126</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:34,589</td>
+<td class="Message">Finished Spring Data repository scanning in 68ms. Found 0 repository interfaces.</td>
+<td class="MethodOfCaller">registerRepositoriesIn</td>
+<td class="FileOfCaller">RepositoryConfigurationDelegate.java</td>
+<td class="LineOfCaller">182</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:35,352</td>
+<td class="Message">Bean &#39;shiroConfig&#39; of type [org.jeecg.config.ShiroConfig$$EnhancerBySpringCGLIB$$7b5987b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:35,508</td>
+<td class="Message">Bean &#39;shiroRealm&#39; of type [org.jeecg.modules.shiro.authc.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:36,621</td>
+<td class="Message">===============(1)创建缓存管理器RedisCacheManager</td>
+<td class="MethodOfCaller">redisCacheManager</td>
+<td class="FileOfCaller">ShiroConfig.java</td>
+<td class="LineOfCaller">203</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:36,628</td>
+<td class="Message">===============(2)创建RedisManager,连接Redis..URL= 127.0.0.1:6379</td>
+<td class="MethodOfCaller">redisManager</td>
+<td class="FileOfCaller">ShiroConfig.java</td>
+<td class="LineOfCaller">221</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:36,636</td>
+<td class="Message">Bean &#39;redisManager&#39; of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:36,645</td>
+<td class="Message">Bean &#39;securityManager&#39; of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:36,694</td>
+<td class="Message">Bean &#39;authorizationAttributeSourceAdvisor&#39; of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:36,818</td>
+<td class="Message">Bean &#39;org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration&#39; of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b541e23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:37,082</td>
+<td class="Message">Bean &#39;spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties&#39; of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:37,090</td>
+<td class="Message">Bean &#39;com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration&#39; of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$c4e28ef4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:37,106</td>
+<td class="Message">Bean &#39;dsProcessor&#39; of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:37,118</td>
+<td class="Message">Bean &#39;dynamicDatasourceAnnotationAdvisor&#39; of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:37,155</td>
+<td class="Message">Bean &#39;spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties&#39; of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:37,170</td>
+<td class="Message">Bean &#39;org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration&#39; of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration$$EnhancerBySpringCGLIB$$706ddc6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:37,549</td>
+<td class="Message">Bean &#39;lettuceClientResources&#39; of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:37,777</td>
+<td class="Message">Bean &#39;redisConnectionFactory&#39; of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:37,794</td>
+<td class="Message">Bean &#39;redisConfig&#39; of type [org.jeecg.config.RedisConfig$$EnhancerBySpringCGLIB$$c6280f03] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:37,847</td>
+<td class="Message">Bean &#39;org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration&#39; of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$6e6cfbd3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:37,857</td>
+<td class="Message">Bean &#39;eventBus&#39; of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">330</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:38,536</td>
+<td class="Message">Tomcat initialized with port(s): 8080 (http)</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">TomcatWebServer.java</td>
+<td class="LineOfCaller">90</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:38,557</td>
+<td class="Message">Initializing ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:38,573</td>
+<td class="Message">Starting service [Tomcat]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:38,574</td>
+<td class="Message">Starting Servlet engine: [Apache Tomcat/9.0.16]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:38,586</td>
+<td class="Message">The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python27\;C:\Python27\Scripts;D:\work\app\client\ms-pc031\product\12.2.0\client_1;D:\work\app\client\ms-pc031\product\12.2.0\client_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Kingdee\CloudDepClient;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\world\java\jdk1.8\bin;D:\world\java\jdk1.8\jre\bin;D:\world\SVN\bin;D:\world\apache-maven-3.6.3\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;D:\Git\cmd;D:\world\mysql-8.0.19-winx64\bin;D:\world\mysql-8.0.19-winx64;C:\Python27;D:\world\nodejs\;D:\world\nodejs\node_global;C:\Users\ms-pc031\AppData\Local\Microsoft\WindowsApps;C:\Users\ms-pc031\AppData\Roaming\npm;.]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:38,758</td>
+<td class="Message">Initializing Spring embedded WebApplicationContext</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:38,760</td>
+<td class="Message">Root WebApplicationContext: initialization completed in 6866 ms</td>
+<td class="MethodOfCaller">prepareWebApplicationContext</td>
+<td class="FileOfCaller">ServletWebServerApplicationContext.java</td>
+<td class="LineOfCaller">296</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:39,284</td>
+<td class="Message">动态数据源-检测到druid存在,如配置中未指定type,druid会默认配置</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">DynamicDataSourceCreator.java</td>
+<td class="LineOfCaller">113</td>
+</tr>
+
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:39,787</td>
+<td class="Message">init datasource error, url: jdbc:mysql://localhost:3306/jeecg-boot?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">936</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:932)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.baomidou.dynamic.datasource.DynamicDataSourceCreator.createDruidDataSource(DynamicDataSourceCreator.java:242)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.baomidou.dynamic.datasource.DynamicDataSourceCreator.createDataSource(DynamicDataSourceCreator.java:139)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider.loadDataSources(YmlDynamicDataSourceProvider.java:59)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(DynamicRoutingDataSource.java:202)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1463)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1427)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1346)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1205)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1325)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1171)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:602)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:590)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1226)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorRegistryBeans.get(HealthIndicatorRegistryBeans.java:42)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorAutoConfiguration.healthIndicatorRegistry(HealthIndicatorAutoConfiguration.java:78)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$64d639e3.CGLIB$healthIndicatorRegistry$1(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$64d639e3$$FastClassBySpringCGLIB$$a80aa482.invoke(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$64d639e3.healthIndicatorRegistry(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.createEndpointBean(EndpointDiscoverer.java:149)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.createEndpointBeans(EndpointDiscoverer.java:136)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.discoverEndpoints(EndpointDiscoverer.java:125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getEndpoints(EndpointDiscoverer.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.servletEndpointRegistrar(ServletEndpointManagementContextConfiguration.java:76)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration$$EnhancerBySpringCGLIB$$118875fe.CGLIB$servletEndpointRegistrar$0(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration$$EnhancerBySpringCGLIB$$118875fe$$FastClassBySpringCGLIB$$5efbb880.invoke(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration$$EnhancerBySpringCGLIB$$118875fe.servletEndpointRegistrar(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:235)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:226)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:101)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.ServletContextInitializerBeans.&lt;init&gt;(ServletContextInitializerBeans.java:88)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.FutureTask.run(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.FutureTask.run(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:928)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.startup.Tomcat.start(Tomcat.java:455)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.&lt;init&gt;(TomcatWebServer.java:86)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:415)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.jeecg.JeecgApplication.main(JeecgApplication.java:28)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+</td></tr>
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:39,827</td>
+<td class="Message">{dataSource-1} init error</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">978</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:932)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.baomidou.dynamic.datasource.DynamicDataSourceCreator.createDruidDataSource(DynamicDataSourceCreator.java:242)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.baomidou.dynamic.datasource.DynamicDataSourceCreator.createDataSource(DynamicDataSourceCreator.java:139)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider.loadDataSources(YmlDynamicDataSourceProvider.java:59)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(DynamicRoutingDataSource.java:202)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1463)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1427)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1346)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1205)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1325)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1171)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:602)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:590)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1226)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorRegistryBeans.get(HealthIndicatorRegistryBeans.java:42)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorAutoConfiguration.healthIndicatorRegistry(HealthIndicatorAutoConfiguration.java:78)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$64d639e3.CGLIB$healthIndicatorRegistry$1(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$64d639e3$$FastClassBySpringCGLIB$$a80aa482.invoke(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$64d639e3.healthIndicatorRegistry(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.createEndpointBean(EndpointDiscoverer.java:149)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.createEndpointBeans(EndpointDiscoverer.java:136)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.discoverEndpoints(EndpointDiscoverer.java:125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getEndpoints(EndpointDiscoverer.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.servletEndpointRegistrar(ServletEndpointManagementContextConfiguration.java:76)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration$$EnhancerBySpringCGLIB$$118875fe.CGLIB$servletEndpointRegistrar$0(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration$$EnhancerBySpringCGLIB$$118875fe$$FastClassBySpringCGLIB$$5efbb880.invoke(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration$$EnhancerBySpringCGLIB$$118875fe.servletEndpointRegistrar(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:235)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:226)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:101)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.ServletContextInitializerBeans.&lt;init&gt;(ServletContextInitializerBeans.java:88)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.FutureTask.run(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.FutureTask.run(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:928)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.startup.Tomcat.start(Tomcat.java:455)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.&lt;init&gt;(TomcatWebServer.java:86)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:415)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.jeecg.JeecgApplication.main(JeecgApplication.java:28)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+</td></tr>
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:39,861</td>
+<td class="Message">{dataSource-1,master} inited</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1003</td>
+</tr>
+
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:39,863</td>
+<td class="Message">druid数据源启动失败</td>
+<td class="MethodOfCaller">createDruidDataSource</td>
+<td class="FileOfCaller">DynamicDataSourceCreator.java</td>
+<td class="LineOfCaller">244</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:932)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.baomidou.dynamic.datasource.DynamicDataSourceCreator.createDruidDataSource(DynamicDataSourceCreator.java:242)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.baomidou.dynamic.datasource.DynamicDataSourceCreator.createDataSource(DynamicDataSourceCreator.java:139)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider.loadDataSources(YmlDynamicDataSourceProvider.java:59)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.baomidou.dynamic.datasource.DynamicRoutingDataSource.afterPropertiesSet(DynamicRoutingDataSource.java:202)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1821)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1758)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1463)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1427)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1346)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1205)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1325)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1171)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:602)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:590)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1226)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorRegistryBeans.get(HealthIndicatorRegistryBeans.java:42)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorAutoConfiguration.healthIndicatorRegistry(HealthIndicatorAutoConfiguration.java:78)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$64d639e3.CGLIB$healthIndicatorRegistry$1(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$64d639e3$$FastClassBySpringCGLIB$$a80aa482.invoke(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.health.HealthIndicatorAutoConfiguration$$EnhancerBySpringCGLIB$$64d639e3.healthIndicatorRegistry(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.createEndpointBean(EndpointDiscoverer.java:149)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.createEndpointBeans(EndpointDiscoverer.java:136)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.discoverEndpoints(EndpointDiscoverer.java:125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getEndpoints(EndpointDiscoverer.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration.servletEndpointRegistrar(ServletEndpointManagementContextConfiguration.java:76)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration$$EnhancerBySpringCGLIB$$118875fe.CGLIB$servletEndpointRegistrar$0(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration$$EnhancerBySpringCGLIB$$118875fe$$FastClassBySpringCGLIB$$5efbb880.invoke(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration$$EnhancerBySpringCGLIB$$118875fe.servletEndpointRegistrar(&lt;generated&gt;)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:235)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:226)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addServletContextInitializerBeans(ServletContextInitializerBeans.java:101)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.ServletContextInitializerBeans.&lt;init&gt;(ServletContextInitializerBeans.java:88)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.FutureTask.run(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.FutureTask.run(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:928)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.startup.Tomcat.start(Tomcat.java:455)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.&lt;init&gt;(TomcatWebServer.java:86)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:415)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.jeecg.JeecgApplication.main(JeecgApplication.java:28)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+</td></tr>
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:39,865</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://localhost:3306/jeecg-boot?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false, errorCode 1045, state 28000</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2699</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2697)
+</td></tr>
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:39,895</td>
+<td class="Message">初始共加载 1 个数据源</td>
+<td class="MethodOfCaller">afterPropertiesSet</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">203</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:39,899</td>
+<td class="Message">动态数据源-加载 master 成功</td>
+<td class="MethodOfCaller">addDataSource</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">142</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:39,900</td>
+<td class="Message">当前的默认数据源是单数据源，数据源名为 master</td>
+<td class="MethodOfCaller">afterPropertiesSet</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">212</td>
+</tr>
+
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:39,901</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://localhost:3306/jeecg-boot?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false, errorCode 1045, state 28000</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2699</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2697)
+</td></tr>
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2020-05-01 20:55:39,906</td>
+<td class="Message">{dataSource-1} failContinuous is true</td>
+<td class="MethodOfCaller">setFailContinuous</td>
+<td class="FileOfCaller">DruidAbstractDataSource.java</td>
+<td class="LineOfCaller">1743</td>
+</tr>
+
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:40,458</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://localhost:3306/jeecg-boot?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false, errorCode 1045, state 28000</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2699</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2697)
+</td></tr>
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:40,972</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://localhost:3306/jeecg-boot?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false, errorCode 1045, state 28000</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2699</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2697)
+</td></tr>
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:41,480</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://localhost:3306/jeecg-boot?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false, errorCode 1045, state 28000</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2699</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2697)
+</td></tr>
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:41,986</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://localhost:3306/jeecg-boot?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false, errorCode 1045, state 28000</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2699</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2697)
+</td></tr>
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:42,493</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://localhost:3306/jeecg-boot?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false, errorCode 1045, state 28000</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2699</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2697)
+</td></tr>
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:42,999</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://localhost:3306/jeecg-boot?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false, errorCode 1045, state 28000</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2699</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2697)
+</td></tr>
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:43,507</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://localhost:3306/jeecg-boot?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false, errorCode 1045, state 28000</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2699</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2697)
+</td></tr>
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:44,013</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://localhost:3306/jeecg-boot?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false, errorCode 1045, state 28000</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2699</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2697)
+</td></tr>
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:44,519</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://localhost:3306/jeecg-boot?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false, errorCode 1045, state 28000</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2699</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2697)
+</td></tr>
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:45,026</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://localhost:3306/jeecg-boot?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false, errorCode 1045, state 28000</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2699</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2697)
+</td></tr>
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2020-05-01 20:55:45,532</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://localhost:3306/jeecg-boot?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false, errorCode 1045, state 28000</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2699</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: Access denied for user &#39;root&#39;@&#39;localhost&#39; (using password: YES)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:965)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1224)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2199)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:778)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:47)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1598)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1662)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2697)
+</td></tr>

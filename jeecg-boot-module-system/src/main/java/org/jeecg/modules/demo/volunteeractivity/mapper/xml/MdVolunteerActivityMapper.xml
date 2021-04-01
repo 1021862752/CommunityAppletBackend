@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.demo.volunteeractivity.mapper.MdVolunteerActivityMapper">
+    <select id="getActivityInfoBy" resultType="org.jeecg.modules.demo.volunteeractivity.entity.MdVolunteerActivity">
+        select * from md_volunteer_activity where id=#{id}
+    </select>
+    <select id="getVolunteerActivityList" resultType="java.util.HashMap">
+        select * from md_volunteer_activity where va_status=#{vaStatuso}
+        <if test="type!=null and type!=''">
+            and va_type = #{type}
+        </if>
+        order by va_time_start desc
+    </select>
+</mapper>

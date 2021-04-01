@@ -1,0 +1,8 @@
+jeecg-boot-base-common/target/jeecg-boot-base-common-2.1.4.jar
+*.class
+jeecg-boot-base-common/target/maven-archiver/pom.properties
+*.lst
+jeecg-boot-module-system/target/
+jeecg-boot-module-system/src/main/java/org/jeecg/modules/demo/shop/vue/modules/DomesticOrderModal__Style#Drawer.vue
+jeecg-boot-module-system/src/main/java/org/jeecg/modules/demo/shop/vue/
+.idea/

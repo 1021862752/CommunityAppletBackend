@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jeecg.modules.demo.volunteer.mapper.MdVolunteerMapper">
+    <select id="getVolunteerByid" resultType="org.jeecg.modules.demo.volunteer.entity.MdVolunteer">
+        select * from md_volunteer where vt_open_id=#{vtOpenId}
+    </select>
+</mapper>
