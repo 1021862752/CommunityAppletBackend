@@ -88,7 +88,7 @@ QueryWrapper<?> queryWrapper = QueryGenerator.initQueryWrapper(?, req.getParamet
 - 提交 Pull Request。
 
 ## 版权信息
-该小程序使用 MIT 许可证，详情请查阅 LICENSE 文件。
+© Vincent. All rights reserved.
 
 ## 联系我们
 如果您对该小程序有任何问题或建议，请通过以下方式联系我：
