@@ -80,65 +80,17 @@ QueryWrapper<?> queryWrapper = QueryGenerator.initQueryWrapper(?, req.getParamet
   [在线文档](https://github.com/zhangdaiscott/autopoi)
   
 
+## 代码贡献
+如果您想为该小程序做出贡献，请遵循以下步骤：
 
-#### 三、代码生成器
+- Fork 该项目。
+- 在您的本地修改代码。
+- 提交 Pull Request。
 
-> 功能说明：   一键生成的代码（包括：controller、service、dao、mapper、entity、vue）
- 
- - 模板位置： src/main/resources/jeecg/code-template
- - 技术文档： http://doc.jeecg.com
+## 版权信息
+该小程序使用 MIT 许可证，详情请查阅 LICENSE 文件。
 
+## 联系我们
+如果您对该小程序有任何问题或建议，请通过以下方式联系我：
 
-
-#### 四、编码排重使用示例
-
-重复校验效果：
-![输入图片说明](https://static.oschina.net/uploads/img/201904/19191836_eGkQ.png "在这里输入图片标题")
-
-1.引入排重接口,代码如下:  
- 
-```
-import { duplicateCheck } from '@/api/api'
-  ```
-2.找到编码必填校验规则的前端代码,代码如下:  
-  
-```
-<a-input placeholder="请输入编码" v-decorator="['code', validatorRules.code ]"/>
-
-code: {
-            rules: [
-              { required: true, message: '请输入编码!' },
-              {validator: this.validateCode}
-            ]
-          },
-  ```
-3.找到rules里validator对应的方法在哪里,然后使用第一步中引入的排重校验接口.  
-  以用户online表单编码为示例,其中四个必传的参数有:  
-    
-```
-  {tableName:表名,fieldName:字段名,fieldVal:字段值,dataId:表的主键},
-  ```
- 具体使用代码如下:  
- 
-```
-    validateCode(rule, value, callback){
-        let pattern = /^[a-z|A-Z][a-z|A-Z|\d|_|-]{0,}$/;
-        if(!pattern.test(value)){
-          callback('编码必须以字母开头，可包含数字、下划线、横杠');
-        } else {
-          var params = {
-            tableName: "onl_cgreport_head",
-            fieldName: "code",
-            fieldVal: value,
-            dataId: this.model.id
-          };
-          duplicateCheck(params).then((res)=>{
-            if(res.success){
-             callback();
-            }else{
-              callback(res.message);
-            }
-          })
-        }
-      },
-```
+邮箱：1021862752@qq.com
